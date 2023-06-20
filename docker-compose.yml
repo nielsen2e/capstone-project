@@ -16,7 +16,7 @@ services:
       REACT_APP_SERVER_URL: "https://5000-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"  # "http://localhost:5000" Use this if you're using vscode
     build: ./client
     ports:
-      - "3000:3000"
+      - "3000:80"
     networks:
       - internal-network
     restart: on-failure
