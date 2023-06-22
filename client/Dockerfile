@@ -1,5 +1,5 @@
 # ---- Base Node ----
-FROM node:16.20-slim AS base
+FROM 747184226799.dkr.ecr.us-east-1.amazonaws.com/invoice-client:latest AS base
 
 # Set working directory
 WORKDIR /app

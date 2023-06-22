@@ -1,5 +1,5 @@
 # ---- Builder stage ----
-FROM node:14-alpine AS builder
+FROM 747184226799.dkr.ecr.us-east-1.amazonaws.com/invoice-server:latest AS builder
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json (if available)
