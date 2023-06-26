@@ -103,6 +103,10 @@ app.get('/', (req, res) => {
     res.send('SERVER IS RUNNING')
   })
 
+app.get('/health-check', (req, res) => {
+    res.json({success: true});
+})
+
 const DB_URL = process.env.DB_URL 
 const PORT = process.env.PORT || 5000
 
