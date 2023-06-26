@@ -1,5 +1,5 @@
 {
-    "family": "server",
+    "family": "backend",
     "executionRoleArn": "arn:aws:iam::747184226799:role/InvoiceServiceExecutionRole",
     "taskRoleArn": "arn:aws:iam::747184226799:role/InvoiceTaskRole",
     "networkMode": "awsvpc",
@@ -10,7 +10,7 @@
     ],
     "containerDefinitions": [
       {
-        "name": "server",
+        "name": "backend",
         "image": "747184226799.dkr.ecr.us-east-1.amazonaws.com/invoice-server",
         "essential": true,
         "healthCheck": {

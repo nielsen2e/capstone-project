@@ -19,7 +19,7 @@
           "ssm:GetParameter", 
           "ssm:GetParameters"
       ],
-        "Resource": "arn:aws:ssm:us-east-1:183066416469:parameter/invoice/server/*"
+        "Resource": "arn:aws:ssm:us-east-1:747184226799:parameter/invoice/server/*"
       }
     ]
   }
