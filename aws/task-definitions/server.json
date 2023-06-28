@@ -47,7 +47,7 @@
         "secrets": [
           {"name": "AWS_ACCESS_KEY_ID", "valueFrom": "arn:aws:ssm:AWS_REGION:747184226799:parameter/invoice/server/AWS_ACCESS_KEY_ID"},
           {"name": "AWS_SECRET_ACCESS_KEY", "valueFrom": "arn:aws:ssm:AWS_REGION:747184226799:parameter/invoice/server/AWS_SECRET_ACCESS_KEY"},
-          {"name": "DB_URL", "valueFrom": "arn:aws:ssm:AWS_REGION:747184226799:parameter/invoice/server/DB_URL" }
+          {"name": "DB_URL", "valueFrom": "arn:aws:ssm:AWS_REGION:747184226799:parameter/invoice/server/DB_URL"}
         ]
       }
     ]
