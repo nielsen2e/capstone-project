@@ -13,7 +13,7 @@ resource "kubernetes_ingress_v1" "frontend-service" {
 
   spec {
     rule {
-      host = "frontend.nwokolo.live"
+      host = "www.danielamadi.me"
       http {
         path {
           backend {
