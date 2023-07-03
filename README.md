@@ -28,22 +28,22 @@ You will be using the following technologies and platforms to set up a DevOps en
 8. Automated testing
     - Testing Terraform code with Checkov
 ## Steps
-2. VPC - When running EKS, it requires specific networking. Because all environments will most likely be different.
-3. AWS:
+1. VPC - When running EKS, it requires specific networking. Because all environments will most likely be different.
+2. AWS:
     - Configure credentials to access AWS at a programmatic level
-4. Terraform - The purpose of the Terraform section is to create all of the AWS cloud services you'll need from an environment/infrastructure perspective to run the  application.
+2. Terraform - The purpose of the Terraform section is to create all of the AWS cloud services you'll need from an environment/infrastructure perspective to run the  application.
     - Create an S3 Bucket To Store TFSTATE Files
     - Create an Elastic Container Registry
     - Create An EKS Cluster IAM Role, And Policy For EKS
       Create An EKS Cluster
-5. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the invoice app), containerize it, and store the container inside a container repository. For the container repo, you'll use AWS ECR.
+4. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the invoice app), containerize it, and store the container inside a container repository. For the container repo, you'll use AWS ECR.
     - Create The Docker Image
     - Log Into AWS ECR Repository
-6. Kubernetes - The purpose of the Kubernetes section is to connect to EKS locally and to write the Kubernetes manifest to deploy the invoice app.
+5. Kubernetes - The purpose of the Kubernetes section is to connect to EKS locally and to write the Kubernetes manifest to deploy the invoice app.
     - Connect To EKS From The Terminal
     - Create A Kubernetes Manifest
   
-7. Infracost - The purpose of the Infracost section is to ensure the budget stays within the allowed limit.
+6. Infracost - The purpose of the Infracost section is to ensure the budget stays within the allowed limit.
    - Install Infracost
 7. Automated Testing - The Automation Testing section aims to ensure that all of the Terraform code is performing as it should from a policy, security, and static code analysis perspective.
     - Install And Run Checkov
