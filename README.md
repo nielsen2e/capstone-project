@@ -1,6 +1,7 @@
 ## Introduction
 This is a side project I've been working on. A full stack invoicing application made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed for freelancers and small businesses, but can be used for almost any type of business need. With this application, you can send beautiful invoices, receipts, estimates, quotes, bills, etc to your clients. Jump right off the [Live App](https://accountill.com/) and start sending invoices or download the entire [Source code](https://github.com/Panshak/accountill) and run it on your server.
 
+![Architectural Diagram](https://github.com/nielsen2e/capstone-project/blob/master/Invoice%20Architectural%20Diagram.jpeg)
 
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
