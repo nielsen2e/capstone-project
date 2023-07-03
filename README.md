@@ -1,6 +1,56 @@
+## Introduction
+This is a side project I've been working on. A full stack invoicing application made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed for freelancers and small businesses, but can be used for almost any type of business need. With this application, you can send beautiful invoices, receipts, estimates, quotes, bills, etc to your clients. Jump right off the [Live App](https://accountill.com/) and start sending invoices or download the entire [Source code](https://github.com/Panshak/accountill) and run it on your server.
+
+
+## Technology Details
+You will be using the following technologies and platforms to set up a DevOps environment.
+
+1. AWS
+    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
+2. GitHub
+    - To store the application and infrastructure/automation code
+3. Nodejs
+    - Nodejs will be used for the Mern app.
+4. Terraform
+   - Create an S3 bucket to store Terraform State files
+   - Create an AWS ECR repository with Terraform
+   - Create an EKS cluster
+5. Docker
+   - Create a Docker image
+   - Store the Docker image in AWS ECR
+6. Kubernetes
+   - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
+7. CI/CD
+   - Use Jenkins to create an EKS cluster
+8. Infracost
+   - Use Infracost to check for cost changes in Terraform code
+8. Automated testing
+    - Testing Terraform code with Checkov
+## Steps
+2. VPC - When running EKS, it requires specific networking. Because all environments will most likely be different.
+3. AWS:
+    - Configure credentials to access AWS at a programmatic level
+4. Terraform - The purpose of the Terraform section is to create all of the AWS cloud services you'll need from an environment/infrastructure perspective to run the  application.
+    - Create an S3 Bucket To Store TFSTATE Files
+    - Create an Elastic Container Registry
+    - Create An EKS Cluster IAM Role, And Policy For EKS
+      Create An EKS Cluster
+5. Docker - The purpose of the Docker section is to create a Docker image from the app that the organization is running on-prem (the invoice app), containerize it, and store the container inside a container repository. For the container repo, you'll use AWS ECR.
+    - Create The Docker Image
+    - Log Into AWS ECR Repository
+6. Kubernetes - The purpose of the Kubernetes section is to connect to EKS locally and to write the Kubernetes manifest to deploy the invoice app.
+    - Connect To EKS From The Terminal
+    - Create A Kubernetes Manifest
+  
+7. Infracost - The purpose of the Infracost section is to ensure the budget stays within the allowed limit.
+   - Install Infracost
+7. Automated Testing - The Automation Testing section aims to ensure that all of the Terraform code is performing as it should from a policy, security, and static code analysis perspective.
+    - Install And Run Checkov
+8. CICD - This section aims to automatically create an EKS cluster with CICD using Jenkins.
+    - Create a Jenkins CICD pipeline
 ### [accountill.com](https://accountill.com/)
 # MERN Stack Invoicing Application
-Built with the MERN stack (MongoDB, Express, React and NodeJS).
+Built with the MERN stack (MongoDB, Express, React, and NodeJS).
 ![Invoice](https://res.cloudinary.com/almpo/image/upload/v1637311386/invoice/invoice-app_tcz0dj.png)
 
 
