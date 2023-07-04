@@ -21,28 +21,21 @@ tasks:
       echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list 
       sudo apt update && sudo apt install terraform 
       cd $THEIA_WORKSPACE_ROOT
-  - name: jenkins
-    init: |
-      cd /workspace
-      sudo apt-get update
-      sudo apt install openjdk-11-jre -y
-      java -version
-      curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
-           /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-      echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-           https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-           /etc/apt/sources.list.d/jenkins.list > /dev/null
-      sudo apt-get update
-      sudo apt-get install jenkins -y
-      sudo systemctl enable jenkins
-      sudo systemctl start jenkins
-      sudo systemctl status jenkins
   - name: helm
     init: |
       cd /workspace
-      curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
-      sudo apt-get install apt-transport-https --yes
-      echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
-      sudo apt-get update 
-      sudo apt-get install helm
-
+      curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+      chmod 700 get_helm.sh
+      ./get_helm.sh
+      cd $THEIA_WORKSPACE_ROOT
+  - name: jenkins
+    init: |
+      cd /workspace
+      curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+            /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+            echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+            https://pkg.jenkins.io/debian binary/ | sudo tee \
+            /etc/apt/sources.list.d/jenkins.list > /dev/null
+      sudo apt-get update
+      sudo apt-get install jenkins
+      sudo service jenkins start
