@@ -24,7 +24,7 @@ pipeline {
                 }
             }
         }
-        stage("destroy an EKS Cluster") {
+        stage("Destroy an EKS Cluster") {
             when {
                 expression { params.ENVIRONMENT == 'destroy' }
             }
