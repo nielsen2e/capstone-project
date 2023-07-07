@@ -17,7 +17,7 @@ pipeline {
             steps {
                 script {
                     dir('kubernetes/nginx-controller') {
-                        sh "aws eks --region eu-west-2 update-kubeconfig --name hr-dev-TopG-Cluster"
+                        sh "aws eks --region eu-west-2 update-kubeconfig --name hr-dev-TopG-cluster"
                         sh "terraform init"
                         sh "terraform apply -auto-approve"
                     }
