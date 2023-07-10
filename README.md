@@ -44,7 +44,7 @@ You will be using the following technologies and platforms to set up a DevOps en
     - Create A Kubernetes Manifest
   
 6. Infracost - The purpose of the Infracost section is to ensure the budget stays within the allowed limit.
-   - [Install Infracost.md](/workspace/capstone-project/README.md)
+   - [Install Infracost.md](
 7. Automated Testing - The Automation Testing section aims to ensure that all of the Terraform code is performing as it should from a policy, security, and static code analysis perspective.
     - Install And Run Checkov
 8. CICD - This section aims to automatically create an EKS cluster with CICD using Jenkins.
