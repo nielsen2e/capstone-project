@@ -18,3 +18,4 @@ An example of this would be:
 `checkov --directory terraform`
 
 You'll then see what tests have passed, what tests have failed, and what you can do to remediate the issues. You can either view the results on the terminal or from the UI.
+![checkov diagram](https://github.com/nielsen2e/capstone-project/blob/master/images/Screenshot_20230710_042341.png)
