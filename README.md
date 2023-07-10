@@ -11,7 +11,7 @@ You will be using the following technologies and platforms to set up a DevOps en
 2. GitHub
     - To store the application and infrastructure/automation code
 3. Nodejs
-    - Nodejs will be used for the Mern app.
+    - Nodejs will be used for the Invoice app.
 4. Terraform
    - Create an S3 bucket to store Terraform State files
    - Create an AWS ECR repository with Terraform
@@ -20,7 +20,7 @@ You will be using the following technologies and platforms to set up a DevOps en
    - Create a Docker image
    - Store the Docker image in AWS ECR
 6. Kubernetes
-   - To run the Docker image that's created for the containerized Uber app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
+   - To run the Docker image that's created for the containerized Invoice app. Kubernetes, in this case, EKS, will be used to orchestrate the container.
 7. CI/CD
    - Use Jenkins to create an EKS cluster
 8. Infracost
@@ -53,15 +53,6 @@ You will be using the following technologies and platforms to set up a DevOps en
 # MERN Stack Invoicing Application
 Built with the MERN stack (MongoDB, Express, React, and NodeJS).
 ![Invoice](https://res.cloudinary.com/almpo/image/upload/v1637311386/invoice/invoice-app_tcz0dj.png)
-
-
-## Update
-I am pleased to inform you that the name of this repository has been changed from Arc Invoice to Accountill.
-There are so many things coming! Stay tuned!!
-
-
-Panshak
-----
 
   * [Introduction](#introduction)
   * [Key Features](#key-features)
