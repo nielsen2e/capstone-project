@@ -1,7 +1,8 @@
 ## Introduction
-This is a side project I've been working on. A full stack invoicing application made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed for freelancers and small businesses, but can be used for almost any type of business need. With this application, you can send beautiful invoices, receipts, estimates, quotes, bills, etc to your clients. Jump right off the [Live App](https://accountill.com/) and start sending invoices or download the entire [Source code](https://github.com/Panshak/accountill) and run it on your server.
+This is a side project I've been working on. A full stack invoicing application made using the MERN stack (MongoDB, Express, React & Nodejs), specially designed for freelancers and small businesses, but can be used for almost any type of business need. With this application, you can send beautiful invoices, receipts, estimates, quotes, bills, etc to your clients.
 
 ![Architectural Diagram](https://github.com/nielsen2e/capstone-project/blob/master/Invoice%20Architectural%20Diagram.jpeg)
+![Main Diagram](https://github.com/nielsen2e/capstone-project/blob/master/images/Screenshot_20230707_015954.png)
 
 ## Technology Details
 You will be using the following technologies and platforms to set up a DevOps environment.
@@ -50,6 +51,10 @@ You will be using the following technologies and platforms to set up a DevOps en
 8. CICD - This section aims to automatically create an EKS cluster with CICD using Jenkins.
     - Create a Jenkins CICD pipeline
 ### [accountill.com](https://accountill.com/)
+![Prometheus](https://github.com/nielsen2e/capstone-project/blob/master/images/prometheus.png)
+![Grafana](https://github.com/nielsen2e/capstone-project/blob/master/images/grafana.png)
+
+
 # MERN Stack Invoicing Application
 Built with the MERN stack (MongoDB, Express, React, and NodeJS).
 ![Invoice](https://res.cloudinary.com/almpo/image/upload/v1637311386/invoice/invoice-app_tcz0dj.png)
