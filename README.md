@@ -8,7 +8,7 @@ This is a side project I've been working on. A full stack invoicing application 
 You will be using the following technologies and platforms to set up a DevOps environment.
 
 1. AWS
-    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the Uber app is deployed properly.
+    - AWS will be used to host the application, cloud infrastructure, and any other services we may need to ensure the app is deployed properly.
 2. GitHub
     - To store the application and infrastructure/automation code
 3. Nodejs
